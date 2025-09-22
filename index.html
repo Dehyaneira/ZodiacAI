@@ -4,22 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>ZodiacAI</title>
   </head>
   <body>
-    <h1>ZodiacAI</h1>
-    <h2>🌌 Your Daily Dose of Cosmic Humor</h2>
-    <div>
-       <input type="text" class="zodiacInput" id="zodiacInput" placeholder="Enter your zodiac sign..." /> 
-       <input type="submit" class="submit-button" id="submit-button" value="Go Cosmic ✨" />
-    </div>
-
     <div class="container">
-        "here is your future"
-    </div>
-
-   <footer>
+      <header>
+        <h1>🔮 Zodiac AI ♍ </h1>
+        <h2>🌌 Your Daily Dose of Cosmic Humor</h2>
+      </header>
+      <main>
+        <form id="instructions">
+          <input
+            type="text"
+            placeholder="Enter your zodiac sign..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input
+            type="submit"
+            class="submit-button"
+            value="Go cosmic ✨"
+         
+          />
+        </form>
+        <div class="prediction hidden" id="prediction"></div>
+      </main>
+      <footer>
         <p>
           This project was coded by
           <a href="https://github.com/Dehyaneira" target="_blank"
@@ -35,6 +50,7 @@
           >
         </p>
       </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,97 @@
+body {
+  background: linear-gradient(
+    101.9deg,
+    rgb(255, 205, 225) 0%,
+    rgb(253, 244, 210),
+    rgb(200, 247, 242)
+  );
+
+  font-family: "Courier New", Courier, monospace;
+}
+a {
+  color: rgb(250, 127, 213);
+}
+.container {
+  margin: 100px auto;
+  max-width: 600px;
+}
+header {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+h2 {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(87, 86, 86);
+}
+
+form {
+  padding: 30px;
+  background-color: linear-gradient(
+    101.9deg,
+    rgb(200, 247, 242),
+    rgb(253, 244, 210),
+    rgb(255, 205, 225)
+  );
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 0px 10px rgb(243, 115, 203);
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 13px;
+  border: 1px solid rgb(250, 127, 213);
+  border-radius: 50px;
+  font-size: 16px;
+  width: 80%;
+  line-height: 20px;
+  color: gray;
+}
+.submit-button {
+  width: 20%;
+  background-color: rgba(255, 192, 203, 0.349);
+  border: 1px solid rgb(250, 127, 213);
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.prediction{
+    font-size: 16px;
+    padding: 20px;
+   background-color: #fff;
+   border-radius: 10px; 
+   line-height: 2;
+   border-left: 3px solid rgb(250, 127, 213);
+   box-shadow: 0px 0px 10px rgb(247, 196, 231);
+
+}
+.hidden {
+    display: none;
+}
+
+.generating {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: gray;
+}
